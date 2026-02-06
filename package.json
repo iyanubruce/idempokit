@@ -1,0 +1,23 @@
+{
+  "name": "idempokit",
+  "version": "1.0.0",
+  "workspaces": [
+    "core",
+    "adapters/*"
+  ],
+  "description": " IdempotKit: Production idempotency for every stack. Plug in Redis for speed or Postgres for PCI-compliant durability. Blocks duplicate charges, replay attacks & audit failures. 3 lines to adopt. TypeScript/Go. MIT licensed. ",
+  "main": "server.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iyanubruce/idempokit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iyanubruce/idempokit/issues"
+  },
+  "homepage": "https://github.com/iyanubruce/idempokit#readme"
+}
