@@ -1,5 +1,5 @@
 {
-  "name": "@idempotkit/core",
+  "name": "@idempokit/core",
   "version": "1.0.1",
   "description": "Storage-agnostic idempotency primitive with compliance-by-design (PCI-DSS, CBN)",
   "main": "./dist/index.js",
@@ -62,7 +62,7 @@
     "globals": "^17.3.0",
     "typescript": "^5.4.0",
     "typescript-eslint": "^8.54.0",
-    "vitest": "^1.4.0"
+    "vitest": "^4.0.18"
   },
   "peerDependencies": {
     "typescript": ">=4.8.0"

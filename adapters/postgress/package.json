@@ -1,7 +1,7 @@
 {
-  "name": "@idempotkit/redis-adapter",
+  "name": "@idempotkit/postgres-adapter",
   "version": "1.0.1",
-  "description": "Redis adapter for IdempotKit – atomic idempotency with Lua scripts",
+  "description": "PostgreSQL adapter for IdempotKit – ACID-compliant idempotency with audit trails",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -27,13 +27,15 @@
   },
   "keywords": [
     "idempotency",
-    "redis",
-    "lua",
+    "postgres",
+    "postgresql",
     "fintech",
     "stripe",
     "payments",
-    "atomic",
-    "distributed-systems"
+    "pci-dss",
+    "cbn",
+    "compliance",
+    "audit-trail"
   ],
   "author": {
     "name": "Iyanuoluwa Taiwo",
@@ -44,9 +46,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/iyanubruce/idempokit.git",
-    "directory": "adapters/redis"
+    "directory": "adapters/postgres"
   },
-  "homepage": "https://github.com/iyanubruce/idempokit/tree/main/adapters/redis",
+  "homepage": "https://github.com/iyanubruce/idempokit/tree/main/adapters/postgres",
   "bugs": {
     "url": "https://github.com/iyanubruce/idempokit/issues"
   },
@@ -54,14 +56,15 @@
     "node": ">=18.0.0"
   },
   "dependencies": {
-    "ioredis": "^5.4.0"
+    "pg": "^8.18.0"
   },
   "peerDependencies": {
-    "@idempotkit/core": "^1.0.0",
+    "@idempotkit/core": "^1.0.1",
     "typescript": ">=4.8.0"
   },
   "devDependencies": {
     "@types/node": "^20.12.0",
+    "@types/pg": "^8.16.0",
     "typescript": "^5.4.0",
     "vitest": "^1.4.0"
   },

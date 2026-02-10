@@ -1,7 +1,7 @@
 {
-  "name": "@idempotkit/redis-adapter",
+  "name": "@idempotkit/mongodb-adapter",
   "version": "1.0.1",
-  "description": "Redis adapter for IdempotKit – atomic idempotency with Lua scripts",
+  "description": "MongoDB adapter for IdempotKit – idempotency with TTL cleanup and audit trails",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -27,13 +27,13 @@
   },
   "keywords": [
     "idempotency",
-    "redis",
-    "lua",
+    "mongodb",
+    "mongo",
     "fintech",
-    "stripe",
     "payments",
-    "atomic",
-    "distributed-systems"
+    "compliance",
+    "ttl",
+    "audit-trail"
   ],
   "author": {
     "name": "Iyanuoluwa Taiwo",
@@ -44,9 +44,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/iyanubruce/idempokit.git",
-    "directory": "adapters/redis"
+    "directory": "adapters/mongodb"
   },
-  "homepage": "https://github.com/iyanubruce/idempokit/tree/main/adapters/redis",
+  "homepage": "https://github.com/iyanubruce/idempokit/tree/main/adapters/mongodb",
   "bugs": {
     "url": "https://github.com/iyanubruce/idempokit/issues"
   },
@@ -54,10 +54,10 @@
     "node": ">=18.0.0"
   },
   "dependencies": {
-    "ioredis": "^5.4.0"
+    "mongodb": "^6.3.0"
   },
   "peerDependencies": {
-    "@idempotkit/core": "^1.0.0",
+    "@idempotkit/core": "^1.0.1",
     "typescript": ">=4.8.0"
   },
   "devDependencies": {
