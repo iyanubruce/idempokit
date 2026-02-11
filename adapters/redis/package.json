@@ -1,6 +1,6 @@
 {
   "name": "@idempotkit/redis-adapter",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Redis adapter for IdempotKit – atomic idempotency with Lua scripts",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -20,7 +20,7 @@
   "scripts": {
     "build": "tsc --build",
     "build:watch": "tsc --build --watch",
-    "test": "vitest run",
+    "test": "vitest run ./src/",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit",
     "prepublishOnly": "npm run build && npm run test"

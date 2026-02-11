@@ -13,9 +13,9 @@ import {
   beforeEach,
   vi,
 } from "vitest";
+// src/__tests__/adapter.test.ts
 
-const MONGODB_URI =
-  "mongodb://admin:password@localhost:27017/?authSource=admin";
+const MONGODB_URI = "mongodb://localhost:27017";
 const DB_NAME = "idempotkit_test";
 
 let client: MongoClient;

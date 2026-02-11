@@ -1,6 +1,6 @@
 {
   "name": "@idempotkit/postgres-adapter",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "PostgreSQL adapter for IdempotKit – ACID-compliant idempotency with audit trails",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -20,7 +20,7 @@
   "scripts": {
     "build": "tsc --build",
     "build:watch": "tsc --build --watch",
-    "test": "vitest run",
+    "test": "vitest run ./src/",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit",
     "prepublishOnly": "npm run build && npm run test"

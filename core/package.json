@@ -1,6 +1,6 @@
 {
-  "name": "@idempokit/core",
-  "version": "1.0.1",
+  "name": "@idempotkit/core",
+  "version": "1.0.2",
   "description": "Storage-agnostic idempotency primitive with compliance-by-design (PCI-DSS, CBN)",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -20,7 +20,7 @@
   "scripts": {
     "build": "tsc --build",
     "build:watch": "tsc --build --watch",
-    "test": "vitest run",
+    "test": "vitest run ./src/",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit",
     "prepublishOnly": "npm run build && npm run test"
